@@ -21,5 +21,11 @@ cmake ../ && make && ./trial
 ## Usage 
 
 ```
-./xml_Reader_test_project /path/to/xml/file/filename.xml_Reader_test_project
+./xml_Reader_test_project /path/to/xml/file/filename.xml
+```
+
+or alternatively
+
+```
+./xml_Reader_test_project ../test.xml
 ```
