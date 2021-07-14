@@ -1,9 +1,10 @@
 #include "xml_reader.h"
 
 // constructor
-xml_reader::xml_reader()
+xml_reader::xml_reader(const std::string filename)
 {
     std::cout << "Created xml read class object @PSA" << std::endl;
+    xml_reader::get_fileName(filename);
 }
 
 
