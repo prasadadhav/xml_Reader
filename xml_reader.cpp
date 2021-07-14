@@ -38,4 +38,19 @@ void xml_reader::set_xmlAttributes()
     std::cout << "WARNING: Not yet implemented " << std::endl;
 }
 
+// print out xml attributes
+void xml_reader::print_xmlAttributes()
+{
+    // here we print test attributes
+    int i = 0;
+    BOOST_FOREACH(ptree::value_type & child, xml_reader::my_ptree_obj.get_child("localinfo.player_info"))
+    {
+        std::cout << " " << std::endl;
+        std::cout << i << std::endl; i++;
+        std::cout << "Node name: " << child.first << std::endl;
+        std::cout << "Pass value: " << child.second.get<std::string>("<xmlattr>.pass") << std::endl;
+        std::cout << "isSave value: " << child.second.get<int>("<xmlattr>.isSave") << std::endl;
+        std::cout << "isLastLogin value: " << child.second.get<int>("<xmlattr>.isLastLogin") << std::endl;
+        std::cout << "account value: " << child.second.get<std::string>("<xmlattr>.account") << std::endl;
+    }
 }
