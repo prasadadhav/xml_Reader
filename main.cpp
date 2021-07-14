@@ -15,33 +15,10 @@ int main(int argc, char** argv)
     // Remove the first parameter
     argc--;
 
-//    // First parameter must the xml file
+    // creating file name
     const std::string filename(argv[1]);
-    if (filename.length() == 0)
-    {
-        std::cout << "Error: No file name and path provided!" << std::endl;
-        return 0;
-    }
 
-    // Create an empty property tree object
-    ptree pt;
 
-    // Load the XML file into the property tree. If reading fails
-    // (cannot open file, parse error), an exception is thrown.
-//    read_xml(filename, pt);
-    read_xml(argv[1], pt);
-
-    int i = 0;
-    BOOST_FOREACH(ptree::value_type & child, pt.get_child("localinfo.player_info"))
-    {
-        cout << " " << endl;
-        cout << i << endl; i++;
-        cout << "Node name: " << child.first << endl;
-        cout << "Pass value: " << child.second.get<string>("<xmlattr>.pass") << endl;
-        cout << "isSave value: " << child.second.get<int>("<xmlattr>.isSave") << endl;
-        cout << "isLastLogin value: " << child.second.get<int>("<xmlattr>.isLastLogin") << endl;
-        cout << "account value: " << child.second.get<string>("<xmlattr>.account") << endl;
-    }
 
     return 0;
 }
