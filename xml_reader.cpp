@@ -31,4 +31,11 @@ int xml_reader::get_fileName(const std::string filename)
     return 1;
 }
 
+// set xml attributes
+void xml_reader::set_xmlAttributes()
+{
+    // here we set xml attributes to vars
+    std::cout << "WARNING: Not yet implemented " << std::endl;
+}
+
 }
