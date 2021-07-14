@@ -18,7 +18,12 @@ int main(int argc, char** argv)
     // creating file name
     const std::string filename(argv[1]);
 
+    // creating xml reader object
+    xml_reader my_xml_reader_obj(filename);
 
+    // calling member fucntions of xml reader
+    my_xml_reader_obj.set_xmlAttributes();
+    my_xml_reader_obj.print_xmlAttributes();
 
     return 0;
 }
