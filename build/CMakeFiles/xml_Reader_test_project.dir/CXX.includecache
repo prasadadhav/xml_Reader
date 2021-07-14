@@ -16,6 +16,10 @@ boost/property_tree/xml_parser.hpp
 boost/foreach.hpp
 -
 
+/home/prasad/09_personal/0_CPP/2_XML_Parser/xml_Reader_test_project/xml_reader.cpp
+xml_reader.h
+/home/prasad/09_personal/0_CPP/2_XML_Parser/xml_Reader_test_project/xml_reader.h
+
 /home/prasad/09_personal/0_CPP/2_XML_Parser/xml_Reader_test_project/xml_reader.h
 iostream
 -
