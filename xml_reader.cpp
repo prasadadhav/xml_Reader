@@ -26,6 +26,10 @@ int xml_reader::get_fileName(const std::string filename)
         std::cout << "Error: No file name and path provided!" << std::endl;
         return 0;
     }
+    else
+    {
+        std::cout << "Got the file name correctly" << std::endl;
+    }
     // Load the XML file into the property tree. If reading fails
     // (cannot open file, parse error), an exception is thrown.
     boost::property_tree::xml_parser::read_xml(filename, my_ptree_obj);
