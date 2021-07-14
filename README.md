@@ -18,3 +18,8 @@ or use
 cmake ../ && make && ./trial
 ```
 
+## Usage 
+
+```
+./xml_Reader_test_project /path/to/xml/file/filename.xml_Reader_test_project
+```

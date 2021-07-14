@@ -41,8 +41,11 @@ int main(int argc, char** argv)
 //    read_xml(filename, pt);
     read_xml(argv[1], pt);
 
+    int i = 0;
     BOOST_FOREACH(ptree::value_type & child, pt.get_child("localinfo.player_info"))
     {
+        cout << " " << endl;
+        cout << i << endl; i++;
         cout << "Node name: " << child.first << endl;
         cout << "Pass value: " << child.second.get<string>("<xmlattr>.pass") << endl;
         cout << "isSave value: " << child.second.get<int>("<xmlattr>.isSave") << endl;
