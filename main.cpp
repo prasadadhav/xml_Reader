@@ -1,16 +1,6 @@
 #include "xml_reader.h"
 
-// includes for Boost
-#include<boost/property_tree/ptree.hpp>
-using boost::property_tree::ptree;
-#include<boost/property_tree/xml_parser.hpp>
-#include<boost/foreach.hpp>
-
-using namespace std;
-
-
 int main(int argc, char** argv)
-//int main()
 {
     // Check parameters
     if (argc <= 1)
