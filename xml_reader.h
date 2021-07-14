@@ -13,7 +13,7 @@ class xml_reader
 {
 public:
     // constructor
-    xml_reader();
+    xml_reader(const std::string filename);
 
     // destructor
     ~xml_reader();
