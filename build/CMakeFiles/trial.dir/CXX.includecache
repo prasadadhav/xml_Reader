@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/prasad/09_personal/0_CPP/2_XML_Parser/xml_Reader_test_project/main.cpp
+xml_reader.h
+/home/prasad/09_personal/0_CPP/2_XML_Parser/xml_Reader_test_project/xml_reader.h
+boost/property_tree/ptree.hpp
+-
+boost/property_tree/xml_parser.hpp
+-
+boost/foreach.hpp
+-
+
+/home/prasad/09_personal/0_CPP/2_XML_Parser/xml_Reader_test_project/xml_reader.h
+iostream
+-
+boost/property_tree/ptree.hpp
+-
+boost/property_tree/xml_parser.hpp
+-
+boost/foreach.hpp
+-
+

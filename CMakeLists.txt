@@ -5,10 +5,10 @@
 ####################################
 
 cmake_minimum_required(VERSION 2.8)
-project(trial LANGUAGES CXX DESCRIPTION "xml_Reader_test_project")
+project(xml_Reader_test_project LANGUAGES CXX DESCRIPTION "xml_Reader_test_project")
 
-enable_testing()
-include(CTest)
+#enable_testing()
+#include(CTest)
 
 #############################################################
 ### Find requirements
@@ -18,7 +18,7 @@ include(CTest)
 #############################################################
 ### Include dir and files
 #############################################################
-include_directories(myClasses myFunctions include)
+#include_directories(myClasses myFunctions include)
 
 set(my_includes
     xml_reader.h

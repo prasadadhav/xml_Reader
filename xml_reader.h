@@ -12,6 +12,7 @@ using boost::property_tree::ptree;
 class xml_reader
 {
 public:
+    // constructor
     xml_reader();
 };
 
