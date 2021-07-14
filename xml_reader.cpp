@@ -3,5 +3,14 @@
 // constructor
 xml_reader::xml_reader()
 {
-    std::cout << "This is xml read class @PSA" << std::endl;
+    std::cout << "Created xml read class object @PSA" << std::endl;
+}
+
+
+// destructor
+xml_reader::~xml_reader()
+{
+    std::cout << "destroyed xml read class object @PSA" << std::endl;
+}
+
 }
